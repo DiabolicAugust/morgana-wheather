@@ -22,7 +22,7 @@ interface Condition {
   icon: string;
 }
 
-export function jsonToWeather(response: any) {
+export function jsonToWeather(response: any): Weather {
   return {
     location: {
       name: response.location.name,
